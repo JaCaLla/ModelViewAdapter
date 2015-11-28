@@ -8,8 +8,15 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblResultOperationA: UILabel!
+    @IBOutlet weak var lblResultOperationB: UILabel!
+    
+    
+    let adaptor:Adaptor = Adaptor()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +27,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func setupAdapter(){
+        
+    }
 
 }
 
