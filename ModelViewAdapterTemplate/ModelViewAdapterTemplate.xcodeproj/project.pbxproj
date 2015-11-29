@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0186821C0B636A00D6019F /* OperationB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0186811C0B636A00D6019F /* OperationB.swift */; };
+		5A02CBF21C0A626E00336F06 /* OperationA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02CBF11C0A626E00336F06 /* OperationA.swift */; };
 		5A358E521C099AF50077301A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A358E511C099AF50077301A /* AppDelegate.swift */; };
 		5A358E541C099AF50077301A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A358E531C099AF50077301A /* ViewController.swift */; };
 		5A358E571C099AF60077301A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A358E551C099AF60077301A /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0186811C0B636A00D6019F /* OperationB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationB.swift; sourceTree = "<group>"; };
+		5A02CBF11C0A626E00336F06 /* OperationA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationA.swift; sourceTree = "<group>"; };
 		5A358E4E1C099AF50077301A /* ModelViewAdapterTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelViewAdapterTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A358E511C099AF50077301A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A358E531C099AF50077301A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				5A358E631C099C320077301A /* Adaptor.swift */,
 				5A358E651C099C3B0077301A /* ModelView.swift */,
 				5A358E551C099AF60077301A /* Main.storyboard */,
+				5A02CBF11C0A626E00336F06 /* OperationA.swift */,
+				5A0186811C0B636A00D6019F /* OperationB.swift */,
 				5A358E581C099AF60077301A /* Assets.xcassets */,
 				5A358E5A1C099AF60077301A /* LaunchScreen.storyboard */,
 				5A358E5D1C099AF60077301A /* Info.plist */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A02CBF21C0A626E00336F06 /* OperationA.swift in Sources */,
 				5A358E541C099AF50077301A /* ViewController.swift in Sources */,
 				5A358E661C099C3B0077301A /* ModelView.swift in Sources */,
 				5A358E641C099C320077301A /* Adaptor.swift in Sources */,
+				5A0186821C0B636A00D6019F /* OperationB.swift in Sources */,
 				5A358E521C099AF50077301A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +302,7 @@
 				5A358E621C099AF60077301A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

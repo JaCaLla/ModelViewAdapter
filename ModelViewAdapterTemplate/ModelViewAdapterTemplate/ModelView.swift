@@ -10,7 +10,7 @@ import Foundation
 
 class ModelView: NSObject {
     
-    var textOperationA:NSString = ""
-    var textOperationB:NSString = ""
+    var textOperationA:NSNumber?
+    var textOperationB:NSNumber?
     
 }

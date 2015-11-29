@@ -9,17 +9,19 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,AdaptorDelegate {
 
     @IBOutlet weak var lblResultOperationA: UILabel!
     @IBOutlet weak var lblResultOperationB: UILabel!
     
     
-    let adaptor:Adaptor = Adaptor()
+    var adaptor:Adaptor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self .setupAdapter()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,8 +30,20 @@ class ViewController: UIViewController {
     }
 
     func setupAdapter(){
-        
+        if adaptor == nil {
+            adaptor = Adaptor(delegate: self)
+        }
     }
 
+    // MARK: - AdaptorDelegate
+    func operationAResult(value: NSNumber){
+        
+        lblResultOperationA.text = value.stringValue
+    }
+
+    func operationBResult(value: NSNumber){
+        
+        lblResultOperationB.text = value.stringValue
+    }
 }
 
